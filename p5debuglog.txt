@@ -1,0 +1,27 @@
+(gdb) b main
+Breakpoint 1 at 0x7f4: file p5original.c, line 24.
+(gdb) r
+Starting program: /home/runner/pps-test1-Bhavitha-reddy/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p5original.c:24
+24  {
+(gdb) n
+26    x=input();
+(gdb) n
+enter the number:10
+27    y=input();
+(gdb) n
+enter the number:14
+28    z=input();
+(gdb) n
+enter the number:16
+29    cmp(x,y,z,&l);
+(gdb) n
+30    output(l);
+(gdb) n
+largest number is:16
+31    return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 41) exited normally]
